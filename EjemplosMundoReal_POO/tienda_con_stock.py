@@ -14,3 +14,11 @@ class Producto:
 class Cliente:
     def __init__(self, nombre):
         self.nombre = nombre
+
+# Clase Tienda
+class Tienda:
+    def vender(self, cliente, producto):
+        if producto.vender():
+            print(cliente.nombre, "compró", producto.nombre)
+        else:
+            print("No hay stock disponible")
