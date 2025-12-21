@@ -1,0 +1,1 @@
+Los programas que fueron desarrollados muestran situaciones reales como el realizar compras en tiendas diferentes. En cada ejemplo se aplican los principios de la Programación Orientada a Objetos mediante el uso de clases, atributos y métodos que permiten la interacción entre objetos.
