@@ -25,3 +25,23 @@ class Cliente:
         print("Carrito de", self.nombre)
         for p in self.carrito:
             print("-", p.nombre, "$", p.precio)
+
+# Clase Tienda
+class Tienda:
+    def vender(self, cliente, producto):
+        cliente.agregar_al_carrito(producto)
+
+
+# Programa tienda con carrito
+producto1 = Producto("Fideos", 2)
+producto2 = Producto("Azúcar", 1.5)
+producto3 = Producto("Café", 4.20)
+
+cliente = Cliente("Tania")
+tienda = Tienda()
+
+tienda.vender(cliente, producto1)
+tienda.vender(cliente, producto2)
+tienda.vender(cliente, producto3)
+
+cliente.mostrar_carrito()
