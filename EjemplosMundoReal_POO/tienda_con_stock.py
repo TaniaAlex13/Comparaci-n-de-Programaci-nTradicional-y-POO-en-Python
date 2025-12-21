@@ -5,15 +5,18 @@ class Producto:
         self.precio = precio
         self.stock = stock
 
-        def vender(self):
-            if self.stock > 0:
-                self.stock -= 1
-                return True
-            return False
+    def vender(self):
+        if self.stock > 0:
+            self.stock -= 1
+            return True
+        return False
+
+
 # Clase Cliente
 class Cliente:
     def __init__(self, nombre):
         self.nombre = nombre
+
 
 # Clase Tienda
 class Tienda:
@@ -22,3 +25,11 @@ class Tienda:
             print(cliente.nombre, "compró", producto.nombre)
         else:
             print("No hay stock disponible")
+
+
+# Programa tienda con stock
+producto = Producto("Leche", 0.90, 3)
+cliente = Cliente("Tania")
+tienda = Tienda()
+
+tienda.vender(cliente, producto)
