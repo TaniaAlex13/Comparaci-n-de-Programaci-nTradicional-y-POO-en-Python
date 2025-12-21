@@ -12,3 +12,8 @@ class Cliente:
 
     def comprar(self, producto):
         print(self.nombre, "compró", producto.nombre, "por $", producto.precio)
+# Clase Tienda
+# Representa la tienda
+class Tienda:
+    def vender(self, cliente, producto):
+        cliente.comprar(producto)
