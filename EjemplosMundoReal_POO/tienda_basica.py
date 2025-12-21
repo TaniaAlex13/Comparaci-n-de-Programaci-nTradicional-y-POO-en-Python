@@ -17,3 +17,10 @@ class Cliente:
 class Tienda:
     def vender(self, cliente, producto):
         cliente.comprar(producto)
+
+# Programa tienda basica
+tienda = Tienda()
+producto = Producto("Pan", 0.15)
+cliente = Cliente("Tania")
+
+tienda.vender(cliente, producto)
